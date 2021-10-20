@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Neural Networks</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h3 class="btn btn-default heading">Image Recognition</h3><br><br>
+                <p>Model is trained to identify the following objects: </p><br>
+                <b class="name of objects">Watch<hr>Spoon<hr>Water bottle<hr>Phone<br><br><br></b>
+                <label>Webcam View</label>
+                <div id="camera"></div><br><br>
+                <div id="result"></div><br><br>
+                <button class="btn btn-info" onclick="take_snapshot()">Capture Image</button><br><br>
+                <button class="btn btn-success" onclick="check()">Identify Image</button><br><br>
+                <p>Object: <span id="result_object"></span></p>
+                <p>Accuaracy: <span id="accuracy"></span></p>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

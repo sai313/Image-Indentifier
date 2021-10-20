@@ -1,0 +1,9 @@
+body {
+    background-color:darkblue;
+    color: white;
+}
+#camera {
+    border: 2px dashed white;
+    width: 350px;
+    height: 300px;
+}
